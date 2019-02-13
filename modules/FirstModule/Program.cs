@@ -46,7 +46,7 @@ static Task OnDesiredPropertiesUpdate(TwinCollection desiredProperties, object u
     try
     {
         Console.WriteLine("Desired property change:");
-        Console.WriteLine(JsonConvert.SerializeObject(desiredProperties));
+       // Console.WriteLine(JsonConvert.SerializeObject(desiredProperties));
         Console.WriteLine(desiredProperties.Contains("TemperatureThreshold"));
         if (desiredProperties["TemperatureThreshold"]!=null)
             temperatureThreshold = desiredProperties["TemperatureThreshold"];
