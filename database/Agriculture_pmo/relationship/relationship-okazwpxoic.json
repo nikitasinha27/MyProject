@@ -1,0 +1,28 @@
+{
+	"name": "relationship-okazwpxoic",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Channel",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ChannelId",
+				"ToColumnName": "PurchasingChannelId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Channel.cdm.json/Channel\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"ChannelId\",\"toAttribute\":\"PurchasingChannelId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "dcaea6fd-c1ea-4ec4-ba46-b3b8c191e689",
+		"Name": "relationship-okazwpxoic",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

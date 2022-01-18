@@ -1,0 +1,28 @@
+{
+	"name": "relationship-pttnwerjsj",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Channel",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ChannelId",
+				"ToColumnName": "SalesChannelId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Channel.cdm.json/Channel\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"ChannelId\",\"toAttribute\":\"SalesChannelId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "f60cff89-5870-4c4c-b6e0-d9408f7b48dc",
+		"Name": "relationship-pttnwerjsj",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

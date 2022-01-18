@@ -1,0 +1,28 @@
+{
+	"name": "relationship-eosgtwqwgx",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Transaction",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "TransactionId",
+				"ToColumnName": "OrderId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Transaction.cdm.json/Transaction\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"TransactionId\",\"toAttribute\":\"OrderId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "529817a0-4348-431b-9d10-2c564c11b8b0",
+		"Name": "relationship-eosgtwqwgx",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

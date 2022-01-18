@@ -1,0 +1,28 @@
+{
+	"name": "Agriculture_pmo",
+	"properties": {
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Agriculture\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true,
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Agriculture_pmo",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "idwcanadacentralworkspace-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "0cf2463a-d9c0-4d8b-a97d-dcb4763e37b6",
+		"Name": "Agriculture_pmo",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}

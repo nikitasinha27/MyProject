@@ -1,0 +1,120 @@
+{
+	"name": "BusinessMetricType",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_wpm"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "BusinessMetricTypeId",
+					"Description": "The unique identifier of a Business Metric Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "BusinessMetricTypeName",
+					"Description": "The name of a Business Metric Type.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "BusinessMetricTypeDescription",
+					"Description": "The description of a Business Metric Type.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "9238da4e-3db4-41e5-a8df-6aae4fcc8ebc",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Retail_wpm/BusinessMetricType",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Retail_wpm/BusinessMetricType",
+				"Properties": {
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"BusinessMetricType\",\"path\":\"BusinessMetricType.cdm.json/BusinessMetricType\"},\"description\":\"Business ratios are categorized into 6 categories:\\n\\n- Sales Ratios\\n- Profit Ratios\\n- Debt & Capital Ratios\\n- Efficiency Ratios\\n- Marketing Ratios\\n- Investment Ratios\",\"primaryKey\":[\"BusinessMetricTypeId\"]}}",
+			"Description": "Business ratios are categorized into 6 categories:\n\n- Sales Ratios\n- Profit Ratios\n- Debt & Capital Ratios\n- Efficiency Ratios\n- Marketing Ratios\n- Investment Ratios",
+			"DisplayFolderInfo": "{\"name\":\"Business Metrics\",\"colorCode\":\"#00A2AD\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"BusinessMetricTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BusinessMetricTypeName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BusinessMetricTypeDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"PrimaryKeys": "BusinessMetricTypeId"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "f910e842-b48c-480c-b445-345ea4b7b4dc",
+		"Name": "BusinessMetricType",
+		"Description": "Business ratios are categorized into 6 categories:\n\n- Sales Ratios\n- Profit Ratios\n- Debt & Capital Ratios\n- Efficiency Ratios\n- Marketing Ratios\n- Investment Ratios",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

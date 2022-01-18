@@ -1,0 +1,28 @@
+{
+	"name": "relationship-noxenwcaez",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Channel",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ChannelId",
+				"ToColumnName": "SalesChannelId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Channel.cdm.json/Channel\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"ChannelId\",\"toAttribute\":\"SalesChannelId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "86bec9d7-1f45-4444-b823-76840978a6f0",
+		"Name": "relationship-noxenwcaez",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

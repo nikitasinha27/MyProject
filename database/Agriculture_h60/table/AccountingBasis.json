@@ -1,0 +1,121 @@
+{
+	"name": "AccountingBasis",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Agriculture_h60"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "AccountingBasisId",
+					"Description": "The unique identifier of an Accounting Basis.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "AccountingBasisName",
+					"Description": "The name of an Accounting Basis.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				},
+				{
+					"Name": "AccountingBasisDescription",
+					"Description": "The description of an Accounting Basis.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "d6558ed8-eb59-476d-9408-140f9fbcafc3",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Agriculture_h60/AccountingBasis",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Agriculture_h60/AccountingBasis",
+				"Properties": {
+					"LinkedServiceName": "idwcanadacentralworkspace-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"AccountingBasis\",\"path\":\"AccountingBasis.cdm.json/AccountingBasis\"},\"description\":\"The accounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\\n\\nEx:\\nCASH BASIS ACCOUNTING\\nRevenue is recorded only when cash is received and an expense is recorded only when cash is paid. \\n\\nMost businesses use the accrual basis, which individuals and professional people sue the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.\\n\\nACCRUAL BASIS ACCOUNTING\\nAccounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\\n\\nMost businesses use the accrual basis, which individuals and professional people use the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.\",\"primaryKey\":[\"AccountingBasisId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"name\":\"AccountingBasisId\",\"attributeReference\":{\"entity\":\"AccountingBasis.cdm.json/AccountingBasis\",\"name\":\"AccountingBasisId\"},\"dataType\":\"integer\"},{\"type\":\"Existing\",\"name\":\"AccountingBasisName\",\"attributeReference\":{\"entity\":\"AccountingBasis.cdm.json/AccountingBasis\",\"name\":\"AccountingBasisName\"},\"dataType\":\"string\",\"dataTypeLength\":128},{\"type\":\"Existing\",\"name\":\"AccountingBasisDescription\",\"attributeReference\":{\"entity\":\"AccountingBasis.cdm.json/AccountingBasis\",\"name\":\"AccountingBasisDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512}]}}}",
+			"Description": "The accounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\n\nEx:\nCASH BASIS ACCOUNTING\nRevenue is recorded only when cash is received and an expense is recorded only when cash is paid. \n\nMost businesses use the accrual basis, which individuals and professional people sue the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.\n\nACCRUAL BASIS ACCOUNTING\nAccounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\n\nMost businesses use the accrual basis, which individuals and professional people use the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.",
+			"DisplayFolderInfo": "{\"name\":\"Accounting & Financial Reporting\",\"colorCode\":\"#0078D4\"}",
+			"spark.sql.sources.provider": "csv",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"AccountingBasisId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AccountingBasisName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AccountingBasisDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+			"PrimaryKeys": "AccountingBasisId"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "a85bd446-e355-451f-a795-63cc6f7b0778",
+		"Name": "AccountingBasis",
+		"Description": "The accounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\n\nEx:\nCASH BASIS ACCOUNTING\nRevenue is recorded only when cash is received and an expense is recorded only when cash is paid. \n\nMost businesses use the accrual basis, which individuals and professional people sue the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.\n\nACCRUAL BASIS ACCOUNTING\nAccounting basis in which transactions that change a company's financial statements are recorded in the periods in which the events occur, rather than in the periods in which the company receives or pays cash.\n\nMost businesses use the accrual basis, which individuals and professional people use the cash basis.   The cash basis is not normally suitable when there are significant amounts of inventories, receivables and payables.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

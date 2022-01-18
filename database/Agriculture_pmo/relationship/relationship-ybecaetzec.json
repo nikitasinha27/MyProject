@@ -1,0 +1,28 @@
+{
+	"name": "relationship-ybecaetzec",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Employee",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "EmployeeId",
+				"ToColumnName": "ApprovedByEmployeeId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Employee.cdm.json/Employee\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"EmployeeId\",\"toAttribute\":\"ApprovedByEmployeeId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "52e8c329-9044-4d7f-ba4d-42aaaad5fc5f",
+		"Name": "relationship-ybecaetzec",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

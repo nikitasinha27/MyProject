@@ -1,0 +1,27 @@
+{
+	"name": "Agriculture_h60",
+	"properties": {
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Agriculture\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Agriculture_h60",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "idwcanadacentralworkspace-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "d544261c-d063-4ade-9100-5e0113d68da2",
+		"Name": "Agriculture_h60",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}

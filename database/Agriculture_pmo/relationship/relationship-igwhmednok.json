@@ -1,0 +1,28 @@
+{
+	"name": "relationship-igwhmednok",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Agriculture_pmo"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Communication",
+		"ToTableName": "Document",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CommunicationId",
+				"ToColumnName": "DocumentId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Communication.cdm.json/Communication\",\"toEntity\":\"Document.cdm.json/Document\",\"joinPairs\":[{\"fromAttribute\":\"CommunicationId\",\"toAttribute\":\"DocumentId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "54b9a161-0428-4185-8192-9a1f57ccf232",
+		"Name": "relationship-igwhmednok",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

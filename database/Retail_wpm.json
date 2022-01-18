@@ -1,0 +1,27 @@
+{
+	"name": "Retail_wpm",
+	"properties": {
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Retail_wpm",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "idwcanadacentralworkspace-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "57810164-5b8d-4182-b64b-ba327e7fa724",
+		"Name": "Retail_wpm",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}
