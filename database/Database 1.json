@@ -1,0 +1,23 @@
+{
+	"name": "Database 1",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true,
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Agriculture\",\"Version\":\"0.1.0\"}}}"
+		},
+		"Name": "Database 1",
+		"EntityType": "DATABASE",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://test@idwcancenworkspace.dfs.core.windows.net/Database 1",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "idwcanadacentralworkspace-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
